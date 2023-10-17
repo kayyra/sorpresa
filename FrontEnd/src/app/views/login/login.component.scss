@@ -1,0 +1,43 @@
+.container {
+    background-color: #FFA500; /* Color naranja */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    color: #FFD700; /* Color amarillo dorado */
+    text-align: center;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    color: #FFD700; /* Color amarillo dorado */
+  }
+  
+  input.form-control {
+    border: 1px solid #FFA500; /* Borde naranja */
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    background-color: #FFD700; /* Fondo amarillo dorado */
+  }
+  
+  button.btn {
+    background-color: #FFA500; /* Fondo naranja */
+    color: #FFD700; /* Texto amarillo dorado */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button.btn:hover {
+    background-color: #FFD700; /* Cambio de color al pasar el mouse (amarillo dorado) */
+    color: #FFA500;
+  }
+  
