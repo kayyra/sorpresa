@@ -22,69 +22,77 @@ export class LoginComponent {
 
   login() {
     if (this.username === "felizcumpleaños" && this.password === "123456") {
+      this.showSuccessAlert();
       this.router.navigateByUrl('dashboard');
-      return;
+    } else {
+      this.showErrorAlert();
     }
-
     const bodyData: Login = {
       username: this.username,
       password: this.password
     };
-
-    this.service.postLogin(bodyData).subscribe((resultData: any) => {
-      if (resultData.message === "Email not exist") {
-        this.handleEmailNotExist();
-      } else if (resultData.message === "Login Success") {
-        this.handleLoginSuccess(resultData.email);
-      } else {
-        this.handleLoginError();
-      }
-    });
   }
+  
 
-  private handleEmailNotExist() {
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'El email no existe',
-      customClass: 'custom-swal',
-      showConfirmButton: true,
-      width: 300,
-      confirmButtonColor: 'rgba(29, 41, 81, 1)',
-      showCancelButton: true,
-      cancelButtonText: 'Cancelar',
-      showCloseButton: true,
-      confirmButtonText: 'Registrate',
-    }).then((result) => {
-      if (result.isConfirmed) {
-        this.router.navigateByUrl('register');
-      }
-    });
-  }
+    private showSuccessAlert(){
+      Swal.fire({
+        title: '¡Feliz Cumpleaños!',
+        text: 'Espero que hoy lo estés pasando genial',
+        icon: 'success',
+        customClass: 'custom-swal',
+        showConfirmButton: true,
+        confirmButtonColor: '#008000',
+      });
+    }
 
-  private handleLoginSuccess(email: string) {
-    Swal.fire({
-      title: 'Bienvenid@',
-      text: 'Logueado con éxito',
-      customClass: 'custom-swal',
-      showConfirmButton: true,
-      width: 300,
-      confirmButtonColor: '#008000',
-    }).then(() => {
-      localStorage.setItem('loggedInEmail', email);
-      this.userService.setLogdeInEmail(email);
-      this.router.navigateByUrl('comicList');
-    });
-  }
+    private showErrorAlert(){
+      Swal.fire({
+        title: 'Error',
+        text: 'La contraseña no coincide',
+        customClass: 'custom-swal',
+        showConfirmButton: true,
+        confirmButtonColor: 'ff0000',
+      });
+    }
+      
+    }
 
-  private handleLoginError() {
-    Swal.fire({
-      title: 'Error',
-      text: 'La contraseña no coincide',
-      customClass: 'custom-swal',
-      showConfirmButton: true,
-      width: 300,
-      confirmButtonColor: '#ff0000',
-    });
-  }
-}
+
+
+  //   this.service.postLogin(bodyData).subscribe((resultData: any) => {
+  //     if (resultData.message === "Email not exist") {     
+  //     } else if (resultData.message === "Login Success") {
+  //       this.handleLoginSuccess(resultData.email);
+  //     } else {
+  //       this.handleLoginError();
+  //     }
+  //   });
+  // }
+ 
+  // private handleLoginSuccess(email: string) {
+  //   Swal.fire({
+  //     title: 'Bienvenid@',
+  //     text: 'Logueado con éxito',
+  //     icon: 'success', 
+  //     customClass: 'custom-swal',
+  //     showConfirmButton: true,
+  //     width: 300,
+  //     confirmButtonColor: '#008000', 
+  //   }).then((result) => {
+  //     if (result.isConfirmed) {       
+  //       this.router.navigateByUrl('dashboard');
+  //     }
+  //   });
+  // }
+
+  // private handleLoginError() {
+  //   Swal.fire({
+  //     title: 'Error',
+  //     text: 'La contraseña no coincide',
+  //     customClass: 'custom-swal',
+  //     showConfirmButton: true,
+  //     width: 300,
+  //     confirmButtonColor: '#ff0000',
+  //   });
+  // }
+
