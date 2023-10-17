@@ -1,43 +1,54 @@
 .container {
-    background-color: #FFA500; /* Color naranja */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  h2 {
-    color: #FFD700; /* Color amarillo dorado */
-    text-align: center;
-  }
-  
-  .form-group {
-    margin: 10px 0;
-  }
-  
-  label {
-    color: #FFD700; /* Color amarillo dorado */
-  }
-  
-  input.form-control {
-    border: 1px solid #FFA500; /* Borde naranja */
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    background-color: #FFD700; /* Fondo amarillo dorado */
-  }
-  
-  button.btn {
-    background-color: #FFA500; /* Fondo naranja */
-    color: #FFD700; /* Texto amarillo dorado */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  button.btn:hover {
-    background-color: #FFD700; /* Cambio de color al pasar el mouse (amarillo dorado) */
-    color: #FFA500;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(255,204,112);
+background: linear-gradient(0deg, rgba(255,204,112,1) 1%, rgba(219,223,170,1) 50%, rgba(245,240,187,1) 100%);
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+h2 {
+  color: #FFA500; 
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  color: #FFA500; 
+}
+
+input.form-control {
+  border: 1px solid #FFA500;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  background-color: #FFFFE0; 
+}
+
+button.btn {
+  background: #FFA500; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+button.btn:hover {
+  background: #FFD700; 
+}
