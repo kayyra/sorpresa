@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import  Swal  from 'sweetalert2';
 import { LoginService } from '../../../app/service/login.service';
-import { UserService } from './user.service';
+import { UserService } from '../../../app/service/user.service';
+import { Login } from 'src/app/models/login.model';
 
 @Component({
   selector: 'app-login',

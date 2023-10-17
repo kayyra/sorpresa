@@ -7,11 +7,13 @@ import { Login } from '../models/login.model';
   providedIn: 'root'
 })
 export class LoginService {
-  private loginUrl = '/api/login';
+  private apiUrl = '/api/login';
 
   constructor(private http: HttpClient) { }
 
-  login(credentials: Login): Observable<any>{
-    return this.http.post(this.loginUrl, credentials);
+
+  postLogin(credentials: Login): Observable<any>{
+    const url = `${this.apiUrl}/login`;
+    return this.http.post(url, credentials);
   }
 }
