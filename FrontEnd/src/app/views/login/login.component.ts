@@ -31,8 +31,7 @@ export class LoginComponent {
       username: this.username,
       password: this.password
     };
-  }
-  
+  }  
 
     private showSuccessAlert(){
       Swal.fire({
@@ -41,7 +40,7 @@ export class LoginComponent {
         icon: 'success',
         customClass: 'custom-swal',
         showConfirmButton: true,
-        confirmButtonColor: '#008000',
+        confirmButtonColor: '#8B4513',
       });
     }
 

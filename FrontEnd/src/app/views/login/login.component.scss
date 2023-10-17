@@ -3,12 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgb(255,204,112);
-background: linear-gradient(0deg, rgba(255,204,112,1) 1%, rgba(219,223,170,1) 50%, rgba(245,240,187,1) 100%);
+  background: linear-gradient(135deg, #F9D89C, #D47D48); 
 }
 
 .login-card {
-  background: #fff;
+  background: #CD5C5C; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -17,8 +16,7 @@ background: linear-gradient(0deg, rgba(255,204,112,1) 1%, rgba(219,223,170,1) 50
 }
 
 h2 {
-  color: #FFA500; 
-  font-size: 24px;
+  color: #8B4513; 
   margin-bottom: 20px;
 }
 
@@ -27,19 +25,19 @@ h2 {
 }
 
 label {
-  color: #FFA500; 
+  color: #8B4513; 
 }
 
 input.form-control {
-  border: 1px solid #FFA500;
+  border: 1px solid #FFA500; 
   border-radius: 5px;
   padding: 10px;
   width: 100%;
-  background-color: #FFFFE0; 
+  background-color: #FCE4C1;; 
 }
 
 button.btn {
-  background: #FFA500; 
+  background: #8B4513; 
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -51,5 +49,5 @@ button.btn {
 }
 
 button.btn:hover {
-  background: #FFD700; 
+  background: #CD5C5C; 
 }
