@@ -13,6 +13,7 @@ import { VideosComponent } from './views/videos/videos.component';
 import { ComidaComponent } from './views/comida/comida.component';
 import { FunkosComponent } from './views/funkos/funkos.component';
 import { AnimeComponent } from './views/anime/anime.component';
+import { NavMenuComponent } from './shared/nav-menu/nav-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AnimeComponent } from './views/anime/anime.component';
     VideosComponent,
     ComidaComponent,
     FunkosComponent,
-    AnimeComponent
+    AnimeComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,
