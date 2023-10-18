@@ -3,11 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #F9D89C, #D47D48); 
+  background: linear-gradient(135deg, #F9D89C, #D47D48);
 }
 
 .login-card {
-  background: #CD5C5C; 
+  background: #CD5C5C;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -16,8 +16,9 @@
 }
 
 h2 {
-  color: #8B4513; 
+  color: #8B4513;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .form-group {
@@ -25,29 +26,29 @@ h2 {
 }
 
 label {
-  color: #8B4513; 
+  color: #8B4513;
 }
 
 input.form-control {
-  border: 1px solid #FFA500; 
+  border: 1px solid #FFA500;
   border-radius: 5px;
   padding: 10px;
   width: 100%;
-  background-color: #FCE4C1;; 
+  background-color: #FCE4C1;
 }
 
 button.btn {
-  background: #8B4513; 
+  background: #8B4513;
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  width: 100%;
+  width: 90%;
   font-weight: bold;
-  margin-left: 12px;
+  margin-left: 16px;
 }
 
 button.btn:hover {
-  background: #CD5C5C; 
+  background: #CD5C5C;
 }
