@@ -34,7 +34,7 @@
   background: rgba(255, 255, 255, 0.1); 
 
   h2 {
-    color: #0066FF;
+    color: #ffff;
     margin-bottom: 20px;
   }
 
@@ -46,9 +46,10 @@
         display: block;
         margin-bottom: 5px;
         color: #fff;
-        opacity: 3;
+        opacity: 3;   
+        text-align: left;     
       }
-
+     
       input[type="text"],
       input[type="password"] {
         width: 100%;
