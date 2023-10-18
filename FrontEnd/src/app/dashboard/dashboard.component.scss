@@ -1,29 +1,28 @@
-$primary-color: #007bff;
-.categorias {
-    .container {
-      h1 {
-        color: $primary-color;
-      }
-    }
-  
-    .row {
-      margin-top: 20px;
-  
-      .col-md-3 {
-        background-color: #fff;
-        padding: 15px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin: 5px;
-        text-align: center;
-  
-        a {
-          color: $primary-color;
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
+.container {
+  h1 {
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .row {
+    margin-top: 20px;
+
+    .col-md-3 {
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
   }
+}
