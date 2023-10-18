@@ -1,55 +1,76 @@
+.video-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
 
-  .row {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    text-align: center;
-    font-family: 'fantasy', cursive;
+.row {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  font-family: 'fantasy', cursive;
+  position: relative;
+  z-index: 1; 
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.1); 
 
-    h2 {
-      color: #0066FF;
-      margin-bottom: 20px;
-    }
+  h2 {
+    color: #0066FF;
+    margin-bottom: 20px;
+  }
 
-    form {
-      .form-group {
-        margin: 15px 0;
+  form {
+    .form-group {
+      margin: 15px 0;
 
-        label {
-          display: block;
-          margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-          width: 100%;
-          padding: 10px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-family: 'fantasy', cursive;
-        }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+        opacity: 3;
       }
 
-      button {
-        background-color: #0066FF;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
         border-radius: 5px;
-        cursor: pointer;
         font-family: 'fantasy', cursive;
-        transition: background-color 0.3s;
+      }
+    }
 
-        &:hover {
-          background-color: #0055CC;
-        }
+    button {
+      background-color: #0066FF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'fantasy', cursive;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0055CC;
       }
     }
   }
