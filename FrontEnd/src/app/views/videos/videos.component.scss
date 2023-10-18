@@ -1,0 +1,26 @@
+$primary-color: #007bff;
+.videos {
+    .container {
+      h1 {
+        color: $primary-color;
+      }
+    }
+  
+    .video-list {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 20px;
+  
+        .video-title {
+          font-size: 18px;
+          color: $primary-color;
+        }
+  
+        .video-description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
