@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background:transparent;
+  
     padding: 20px;
     border-radius: 10px;
     color: #fff;
@@ -30,21 +30,24 @@
     ul {
       list-style: none;
       padding: 0;
-
+      // background:rgba(29, 29, 29, 0.3);
+      // border-radius: 8px;      
       li {
         a {
           color: #fff;
           text-decoration: none;
-          font-size: 18px;
+          font-size: 20px;
           display: block;
           padding: 10px;
-          text-align: center;
-          transition: background 0.3s;
+          text-align: center;         
+          transition: background 0.8s;
 
           &:hover {
             background: rgba(255, 255, 255, 0.2);
+          
           }
         }
+   
       }
     }
   }
@@ -72,12 +75,24 @@
 
 @media (min-width:992px) {
   .container .menu ul{
+   
     display: flex;
     li{
       a{
-        font-size: 25px;
+        font-size: 27px;
+        font-weight: bold;
       }
     }
   }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+ 
+  .custom-stroke {
+    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-color: #000000;
+}
  
 }
