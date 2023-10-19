@@ -41,7 +41,7 @@ export class LoginComponent {
         icon: 'success',
         customClass: 'custom-swal',
         showConfirmButton: true,
-        confirmButtonColor: '#8B4513',
+        confirmButtonColor: '#fad591',
       });
     }
 
