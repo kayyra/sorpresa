@@ -3,5 +3,36 @@
     <video autoplay loop muted>
       <source src="/assets/video.mp4" type="video/mp4">
     </video>
+    <div class="menu">
+      <ul>
+        <li>
+        <li (mouseenter)="showDescription('Como sabemos que eres muy goloso encontrarás variedad de comidas distintas')"
+          (mouseleave)="hideDescription()">
+          <a routerLink="/comida">Comida</a>
+          <div class="description-box" *ngIf="currentDescription">Como sabemos que eres muy goloso encontrarás variedad
+            de
+            comidas distintas</div>
+        </li>
+        <li>
+        <li (mouseenter)="showDescription('Como sabemos que eres muy goloso encontrarás variedad de comidas distintas')"
+          (mouseleave)="hideDescription()">
+          <a routerLink="/comida">Anime</a>
+          <div class="description-box" *ngIf="currentDescription">Como sabemos que eres muy goloso encontrarás variedad
+            de comidas distintas</div>
+        </li>
+        <li>
+        <li (mouseenter)="showDescription('Como sabemos que eres muy goloso encontrarás variedad de comidas distintas')"
+          (mouseleave)="hideDescription()">
+          <a routerLink="/comida">Funkos</a>
+          <div class="description-box" *ngIf="currentDescription">Como sabemos que eres muy goloso encontrarás variedad
+            de comidas distintas</div>
+        </li>
+        <li>
+          <a routerLink="/comida">Videos</a>
+          <div class="description-box" *ngIf="currentDescription">Como sabemos que eres muy goloso encontrarás variedad
+            de comidas distintas</div>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

@@ -8,12 +8,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginService } from './service/login.service';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
-import { HeaderComponent } from './shared/header/header.component';
+
 import { VideosComponent } from './views/videos/videos.component';
 import { ComidaComponent } from './views/comida/comida.component';
 import { FunkosComponent } from './views/funkos/funkos.component';
 import { AnimeComponent } from './views/anime/anime.component';
-import { NavMenuComponent } from './shared/nav-menu/nav-menu.component';
+
 
 
 @NgModule({
@@ -21,12 +21,11 @@ import { NavMenuComponent } from './shared/nav-menu/nav-menu.component';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    HeaderComponent,
     VideosComponent,
     ComidaComponent,
     FunkosComponent,
     AnimeComponent,
-    NavMenuComponent,
+
 
   ],
   imports: [
