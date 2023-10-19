@@ -14,7 +14,7 @@ import { ComidaComponent } from './views/comida/comida.component';
 import { FunkosComponent } from './views/funkos/funkos.component';
 import { AnimeComponent } from './views/anime/anime.component';
 import { NavMenuComponent } from './shared/nav-menu/nav-menu.component';
-import { NavmenuComponent } from './shared/navmenu/navmenu.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { NavmenuComponent } from './shared/navmenu/navmenu.component';
     FunkosComponent,
     AnimeComponent,
     NavMenuComponent,
-    NavmenuComponent
+
   ],
   imports: [
     BrowserModule,
