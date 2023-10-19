@@ -13,6 +13,7 @@ import { VideosComponent } from './views/videos/videos.component';
 import { ComidaComponent } from './views/comida/comida.component';
 import { FunkosComponent } from './views/funkos/funkos.component';
 import { AnimeComponent } from './views/anime/anime.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 
@@ -25,6 +26,7 @@ import { AnimeComponent } from './views/anime/anime.component';
     ComidaComponent,
     FunkosComponent,
     AnimeComponent,
+    FooterComponent,
 
 
   ],
