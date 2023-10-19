@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './views/login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { VideosComponent } from './views/videos/videos.component';
 import { ComidaComponent } from './views/comida/comida.component';
