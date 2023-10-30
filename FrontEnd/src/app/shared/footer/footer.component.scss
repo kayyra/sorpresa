@@ -8,15 +8,15 @@
   padding: 20px 0;
   text-align: center;
   z-index: 1;
+  font-family: 'Almendra Display', cursive;
 
   .footer-image {
     position: absolute;
-    bottom: -90px;
+    bottom: 50px; 
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 1;   
   }
-
- 
-
 }
+
+

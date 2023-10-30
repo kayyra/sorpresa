@@ -29,9 +29,7 @@
 
     ul {
       list-style: none;
-      padding: 0;
-      // background:rgba(29, 29, 29, 0.3);
-      // border-radius: 8px;      
+      padding: 0;       
       li {
         a {
           color: #fff;
@@ -41,6 +39,7 @@
           padding: 10px;
           text-align: center;         
           transition: background 0.8s;
+          font-family: 'Almendra Display', cursive;
 
           &:hover {
             background: rgba(255, 255, 255, 0.2);
@@ -67,6 +66,7 @@
   
   ul li:hover .description-box {
     display:inline-block;
+    color: #fff;
   }
   
 
@@ -90,9 +90,6 @@
     margin: 0 auto;
   }
  
-  .custom-stroke {
-    -webkit-text-stroke-width: 0.9px;
-    -webkit-text-stroke-color: #000000;
-}
  
 }
+ 
