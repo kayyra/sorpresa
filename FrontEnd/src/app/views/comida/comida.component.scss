@@ -1,7 +1,16 @@
-@media(min-width:768px) {
-    .error{
+@media (min-width: 768px) {
+    body {
         display: flex;
         justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #53687e;
+        margin: 0; 
     }
-   
+
+    .error {    
+        text-align: center; 
+        padding: 20px; 
+    }
 }
+
