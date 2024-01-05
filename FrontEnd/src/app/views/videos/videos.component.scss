@@ -41,6 +41,12 @@ h1{
     color: #c0c0c0;
 }
 
+svg{
+  width: 5em;
+  height: 2em;
+  cursor: pointer;  
+}
+
 .gallery__item:nth-child(1) {
   grid-column: span 3;
 }
