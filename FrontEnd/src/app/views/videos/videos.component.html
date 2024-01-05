@@ -1,1 +1,28 @@
-<video src=""></video>
+<!-- galeria.component.html -->
+<div class="cumpleanos-header">
+    <h1 style="color: #c0c0c0;">¡Feliz Cumpleaños!</h1>
+  </div>
+  
+  <div class="galeria">
+    <div *ngFor="let video of videos" class="video-card">
+      <div class="video-item" [class.video-horizontal]="isVideoHorizontal(video)">
+        <video controls (click)="openModal(video)">
+          <source [src]="video.url" type="video/mp4">
+          Tu navegador no soporta el tag de video.
+        </video>
+      </div>
+    </div>
+  
+    <div class="image-container">
+      <img src="../../../assets/videos/Cele.jpeg" alt="Feliz Cumpleaños">
+    </div>
+  
+  
+    <div class="modal" [ngClass]="{ 'modal-open': isModalOpen }">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <video *ngIf="selectedVideo" controls [src]="selectedVideo.url" type="video/mp4">
+        Tu navegador no soporta el tag de video.
+      </video>
+    </div>
+  </div>
+  
