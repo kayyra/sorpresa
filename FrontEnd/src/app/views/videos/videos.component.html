@@ -1,28 +1,45 @@
-<!-- galeria.component.html -->
-<div class="cumpleanos-header">
-    <h1 style="color: #c0c0c0;">¡Feliz Cumpleaños!</h1>
+
+<h1>¡Feliz Cumpleaños!</h1>
+
+<div class="gallery-container">
+  
+  <div class="gallery__item">
+    <video src="../../../assets/videos/Nano.mp4" class="gallery__video" controls></video>
+    <h2 class="gallery__title">Nano</h2>
   </div>
-  
-  <div class="galeria">
-    <div *ngFor="let video of videos" class="video-card">
-      <div class="video-item" [class.video-horizontal]="isVideoHorizontal(video)">
-        <video controls (click)="openModal(video)">
-          <source [src]="video.url" type="video/mp4">
-          Tu navegador no soporta el tag de video.
-        </video>
-      </div>
-    </div>
-  
-    <div class="image-container">
-      <img src="../../../assets/videos/Cele.jpeg" alt="Feliz Cumpleaños">
-    </div>
-  
-  
-    <div class="modal" [ngClass]="{ 'modal-open': isModalOpen }">
-      <span class="close" (click)="closeModal()">&times;</span>
-      <video *ngIf="selectedVideo" controls [src]="selectedVideo.url" type="video/mp4">
-        Tu navegador no soporta el tag de video.
-      </video>
-    </div>
+
+  <div class="gallery__item">
+    <video src="../../../assets/videos/Venki.mp4" class="gallery__video" controls></video>
+    <h2 class="gallery__title">Venki</h2>
   </div>
-  
+
+  <div class="gallery__item">
+    <video src="../../../assets/videos/Fushi.mp4" class="gallery__video" controls></video>
+    <h2 class="gallery__title">Fushi</h2>
+  </div>
+
+  <div class="gallery__item">
+    <video src="../../../assets/videos/Vane.mp4" class="gallery__video" controls></video>
+    <h2 class="gallery__title">Vane</h2>
+  </div>
+
+  <div class="gallery__item">
+    <video src="../../../assets/videos/Sproks&Fer.mp4" class="gallery__video" controls></video>
+    <h2 class="gallery__title">Sproks & Fer</h2>
+  </div>
+
+  <div class="gallery__item">
+    <video src="../../../assets/videos/Maite, Cristian y Josep.mp4" class="gallery__video" controls></video>
+    <h2 class="gallery__title">Maite, Cristian & Josep</h2>
+  </div>
+
+  <div class="gallery__item">
+    <video src="../../../assets/videos/Gemma&Busy.mp4" class="gallery__video" controls></video>
+    <h2 class="gallery__title">Gemma & Busy</h2>
+  </div>
+
+
+    <img class="gallery__video" src="../../../assets/videos/Cele.jpeg" alt="Cele">
+    <h2 class="gallery__img">Cele</h2>
+ 
+</div>
